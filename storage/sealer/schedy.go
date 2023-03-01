@@ -66,8 +66,8 @@ func SchedMyn(task *WorkerRequest, worker *cachedSchedWorker) bool {
 	return false
 }
 func wAllworkersToJson() error {
-
-	file, _ := os.OpenFile(".workers.json", os.O_WRONLY|os.O_TRUNC, 0666)
+	fname := os.Getenv("HOME") + "/" + ".workers.json"
+	file, _ := os.OpenFile(fname, os.O_WRONLY|os.O_TRUNC, 0666)
 	defer file.Close()
 	log.Debugf("write allworkers to .workers.json", alls)
 	buf := new(bytes.Buffer)
