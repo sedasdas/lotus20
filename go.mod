@@ -29,7 +29,7 @@ require (
 	github.com/etclabscore/go-openrpc-reflect v0.0.36
 	github.com/fatih/color v1.13.0
 	github.com/filecoin-project/dagstore v0.5.2
-	github.com/filecoin-project/filecoin-ffi v0.30.4-0.20200910194244-f640612a1a1f
+	github.com/filecoin-project/filecoin-ffi v1.20.0
 	github.com/filecoin-project/go-address v1.1.0
 	github.com/filecoin-project/go-amt-ipld/v4 v4.0.0
 	github.com/filecoin-project/go-bitfield v0.2.4
@@ -350,6 +350,6 @@ require (
 	lukechampine.com/blake3 v1.1.7 // indirect
 )
 
-replace github.com/filecoin-project/filecoin-ffi => ./extern/filecoin-ffi
+//replace github.com/filecoin-project/filecoin-ffi => ./extern/filecoin-ffi
 
 replace github.com/filecoin-project/test-vectors => ./extern/test-vectors
